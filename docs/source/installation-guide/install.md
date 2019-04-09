@@ -254,7 +254,7 @@ For Centos 7.x and Red Hat 7.x:
 # /sbin/gluu-serverd-3.1.6 disable
 # /sbin/gluu-serverd-3.1.6 stop
 # yum remove gluu-server-3.1.6 
-# rm -rf /opt/gluu-server-3.1.6.save
+# rm -rf /opt/gluu-server-3.1.6.rpm.save
 ```
 
 !!! Note
