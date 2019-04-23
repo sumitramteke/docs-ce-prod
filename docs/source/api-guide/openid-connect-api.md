@@ -18,7 +18,7 @@ This page provides an interface to request authorization through REST web servic
 The authorization endpoint performs end-user authentication. This is done by sending the user agent to the authorization server using request parameters defined by OAuth 2.0 and additional parameters and parameter values defined by OpenID Connect.
 
 ### URL
-`http://<hostname of Gluu Server>/oxauth/restv1/authorize`
+`https://<hostname of Gluu Server>/oxauth/restv1/authorize`
 
 ### Parameters
 
@@ -596,7 +596,7 @@ For more details on Authorization request parameters using JWTs, visit [here](ht
 The Authorization Endpoint performs end-user authentication.
 
 ### URL
-`http://<hostname of Gluu Server>/oxauth/restv1/authorize`
+`https://<hostname of Gluu Server>/oxauth/restv1/authorize`
 ### Parameters
 <table border="1">
         <tr>
@@ -878,7 +878,7 @@ The JWT MUST contain the following REQUIRED Claim Values and MAY contain the fol
 For more details on [client Authentication](http://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication) 
 
 ###### URL
-    http://gluu.org/oxauth/restv1/token
+`https://<hostname of Gluu Server>/oxauth/restv1/token`
 
 ###### Parameters
 <table border="1">
@@ -1042,7 +1042,7 @@ OpenID Services, in this case register a user, and acquire a client ID and a sha
 Registers new dynamic client in oxAuth.
 
 #### URL
-   http://gluu.org/oxauth/restv1/register
+`https://<hostname of Gluu Server>/oxauth/restv1/register`
 
 #### Parameters
 
@@ -1200,7 +1200,7 @@ Below is an example of Error Response
 
 This operation updates the Client Metadata for a registered client.
 #### URL
-    http://gluu.org/oxauth/restv1/register
+`https://<hostname of Gluu Server>/oxauth/restv1/register`
 #### Parameters
 The request is sent as an `HTTP PUT` request to the client registration endpoint with JSON object containing updated client's metadata in its body.
 
@@ -1218,7 +1218,7 @@ Client Identificator or INUM, a client shared secret and the account expiration 
 
 This operation retrieves the Client Metadata for a previously registered client.
 #### URL
-    http://gluu.org/oxauth/register
+`https://<hostname of Gluu Server>/oxauth/register`
 #### Parameters
 The request is sent as an `HTTP POST` to the client registration endpoint as JSON with the parameters.
 
@@ -1272,7 +1272,7 @@ End current Connect session.
 
 
 ###### URL
-    http://gluu.org/oxauth/restv1/end_session
+`https://<hostname of Gluu Server>/oxauth/restv1/end_session`
 ###### Parameters
 - query
 
@@ -1349,7 +1349,7 @@ The Access Token obtained from an OpenID Connect Authentication Request is
 sent as a Bearer Token.
 
 ###### URL
-    http://gluu.org/oxauth/restv1/userinfo
+`https://<hostname of Gluu Server>/oxauth/restv1/userinfo`
 ###### Parameters
 - form
 
@@ -1415,7 +1415,7 @@ Returns Claims about the authenticated End-User.
 The Access Token obtained from an OpenID Connect Authentication Request is sent as a Bearer Token.
 
 ###### URL
-    http://gluu.org/oxauth/restv1/userinfo
+`https://<hostname of Gluu Server>/oxauth/restv1/userinfo`
 ###### Parameters
 - query
 
